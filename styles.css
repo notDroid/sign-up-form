@@ -3,6 +3,10 @@
     src: url(fonts/Norse-Bold.otf);
 }
 
+:root {
+    --color: #596D48;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -79,21 +83,40 @@ body {
 .input input {
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
-    border-radius: 3px;
+    border-radius: 7px;
     width: 100%;
     padding: 7px;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 500;
 }
+
+.input label {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.input input:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}    
+
+.input input:invalid {
+    outline: none;
+    border: 2px solid red;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}    
 
 .create-btn {
     padding: 14px 50px;
-    border-radius: 10px;
+    border-radius: 15px;
 
     color: white;
     font-size: 20px;
     font-weight: bold;
 
-    background-color: rgb(67, 109, 67);
+    background-color: var(--color);
     border: none;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
@@ -101,5 +124,10 @@ body {
 }
 
 .log-in-text {
-    margin: 50px;
+    margin-left: 50px;
+}
+
+.log-in-text a {
+    font-weight: bold;
+    color: var(--color);
 }

@@ -17,42 +17,42 @@
         </div>
         <div>
             <div class="header-text">This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!</div>
-            <div class="form-container">
-                <form action="post">
+            <form action="">
+                <div class="form-container">
                     <div class="form-row">
                         <div class="input">
-                            <label for="">FIRST NAME</label>
-                            <input type="text">
+                            <label for="fn">FIRST NAME</label>
+                            <input type="text" name="fn">
                         </div>
                         <div class="input">
-                            <label for="">LAST NAME</label>
-                            <input type="text">
+                            <label for="ln">LAST NAME</label>
+                            <input type="text" name="ln">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="input">
-                            <label for="">EMAIL</label>
-                            <input type="text">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email">
                         </div>
                         <div class="input">
-                            <label for="">PHONE NUMBER</label>
-                            <input type="text">
+                            <label for="pn">PHONE NUMBER</label>
+                            <input type="tel" name="pn" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="input">
-                            <label for="">PASSWORD</label>
-                            <input type="text">
+                            <label for="pswd">PASSWORD</label>
+                            <input type="password" name="pswd" id="pswd">
                         </div>
                         <div class="input">
-                            <label for="">CONFIRM PASSWORD</label>
-                            <input type="text">
+                            <label for="cp">CONFIRM PASSWORD</label>
+                            <input type="password" name="cp" id="cp">
                         </div>
                     </div>
-                </form>
-            </div>
-            <button class="create-btn">Create Account</button>
-            <div class="log-in-text">Already have an account <a>log in</a></div>
+                </div>
+                <button class="create-btn" type="submit">Create Account</button>
+            </form>
+            <div class="log-in-text">Already have an account? <a>Log In</a></div>
         </div>
     </div>
 </body>
